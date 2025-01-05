@@ -1,14 +1,17 @@
 {% include 'news/partials/head.html' %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a class="main-logo" href="/">
-                    <i class="fa-solid fa-newspaper main-logo-icon"></i>
-                    <span class="main-logo-text">News teste</span>
-                </a>
-            </h1>
+    {% include "news/partials/header.html" %}
+    {% include "news/partials/search.html" %}
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include "news/partials/news.html" %}
+
         </div>
-    </header>
+    </main>
+
+    {% include "news/partials/footer.html" %}
 </body>
+
+</html>
